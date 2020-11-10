@@ -13,6 +13,10 @@
   }
 }
 
+body {
+  background-color: #282c34;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +39,32 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Combatant {
+  position: relative;
+  background-color: #357b9e;
+  width: 80%;
+  max-width: 200px;
+  margin-top: 2%;
+  margin-left: 2%;
+  border-radius: 5px;
+}
+
+.Initiatives {
+  background-color: #282c34;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+}
+
+.newCombatantBar {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
