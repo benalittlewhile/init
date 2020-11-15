@@ -13,7 +13,9 @@ function Initiatives() {
   const [combatants, setCombatants] = React.useState([]);
   const [newCombatantName, setNewCombatantName] = React.useState();
   const [newCombatantInitiative, setNewCombatantInitiative] = React.useState();
-  const [newCombatantCategory, setNewCombatantCategory] = React.useState();
+  const [newCombatantCategory, setNewCombatantCategory] = React.useState(
+    "Player"
+  );
 
   let addCombatant = () => {
     let newCombatant = {
@@ -45,24 +47,33 @@ function Initiatives() {
       </div>
       <div className="newCombatantBar">
         <input
+          className="newCombatantInput"
           type="text"
           label="new name"
           defaultValue="new name"
           onChange={(event) => setNewCombatantName(event.target.value)}
         ></input>
         <input
+          className="newCombatantInput"
           type="text"
           label="new initiative"
           defaultValue="new initiative"
           onChange={(event) => setNewCombatantInitiative(+event.target.value)}
         ></input>
-        <input
+        <select
+          className="newCombatantInput"
           type="text"
-          label="new category"
-          defaultValue="new category"
+          defaultValue="Player"
           onChange={(event) => setNewCombatantCategory(event.target.value)}
-        ></input>
+        >
+          <option selected value="Player">
+            Player
+          </option>
+          <option value="Enemy">Enemy</option>
+          <option value="NPC">NPC</option>
+        </select>
         <button
+          className="newCombatantInput"
           onClick={() => {
             addCombatant();
           }}

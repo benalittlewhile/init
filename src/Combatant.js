@@ -2,7 +2,7 @@ import React from "react";
 
 function Combatant(props) {
   return (
-    <div className="Combatant">
+    <div className={"Combatant " + props.category}>
       <h1>{props.name}</h1>
       <h2>initiative: {props.initiative}</h2>
       <h2>category: {props.category}</h2>

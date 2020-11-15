@@ -43,12 +43,25 @@ body {
 
 .Combatant {
   position: relative;
-  background-color: #357b9e;
   width: 80%;
   max-width: 200px;
   margin-top: 2%;
   margin-left: 2%;
   border-radius: 5px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.Combatant.Enemy {
+  background-color: rgb(202, 80, 80);
+}
+
+.Combatant.Player {
+  background-color: #357b9e;
+}
+
+.Combatant.NPC {
+  background-color: rgb(95, 190, 95);
 }
 
 .Initiatives {
@@ -67,4 +80,17 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+
+.newCombatantInput {
+  border-radius: 6px;
+  border: none;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+input.newCombatantInput {
+  border: none;
 }
